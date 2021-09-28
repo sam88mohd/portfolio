@@ -1,13 +1,15 @@
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import styles from "../styles/Home.module.css";
-import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
-import { useState } from "react";
 import Sidebar from "./components/Sidebar";
+import { useDetectOutsideClick } from "./components/useDetectOutsideClick";
+import { useRef } from "react";
+import Banner from "./components/Banner";
+import About from "./components/About";
+import ToggleBtn from "./components/ToggleBtn";
 
 export default function Home() {
-  const [toggle, setToggle] = useState(false);
+  const hideRef = useRef(null);
+  const [toggle, setToggle] = useDetectOutsideClick(hideRef, false);
+
   return (
     <div>
       <Head>
@@ -18,38 +20,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className={styles.toggle} onClick={() => setToggle(!toggle)}>
-          {toggle ? (
-            <IoCloseOutline color="white" fontSize="2em" />
-          ) : (
-            <IoMenuOutline color="white" fontSize="2em" />
-          )}
-        </div>
-        <section className={styles.banner} id="home">
-          <div className={styles.imgSidebar}>
-            <Image src={"/sidebarimg.jpg"} layout="fill" alt="sidebarImg" />
-          </div>
-          <div className={styles.contextBx}>
-            <h5 className={styles.logoText}>My_Portfolio</h5>
-            <div>
-              <h4>
-                <span>Hello</span>, I&apos;m
-              </h4>
-              <h2>Samsudin Mohamad</h2>
-              <h4>I&apos;m a Front End Web Development</h4>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Similique, culpa? Tenetur nobis voluptate, animi fugiat velit
-                quia eveniet iste maiores consequuntur commodi assumenda tempore
-                iusto itaque.
-              </p>
-              <Link href="#about">
-                <a className={styles.btn}>About Me</a>
-              </Link>
-            </div>
-          </div>
-        </section>
-        <section id="about">teste</section>
+        <ToggleBtn toggle={toggle} setToggle={setToggle} hideRef={hideRef} />
+        <Banner />
+        <About />
         <Sidebar toggle={toggle} />
       </main>
     </div>
