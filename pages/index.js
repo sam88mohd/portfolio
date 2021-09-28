@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Sidebar from "./components/Sidebar";
-import { useDetectOutsideClick } from "./components/useDetectOutsideClick";
+import { useDetectOutsideClick } from "../functions/useDetectOutsideClick";
 import { useRef } from "react";
 import Banner from "./components/Banner";
 import About from "./components/About";
