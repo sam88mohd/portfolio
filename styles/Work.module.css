@@ -1,0 +1,44 @@
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.workBox {
+  position: relative;
+  width: 265px;
+  height: 265px;
+  margin: 10px;
+  transition: 0.5;
+  text-align: center;
+}
+
+.imgBx,
+.textBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textBx {
+  background: #000;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.workBox:hover .textBx {
+  opacity: 1;
+}
+
+.textBx h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+}

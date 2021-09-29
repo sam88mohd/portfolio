@@ -17,17 +17,17 @@ const Sidebar = ({ toggle }) => {
           </Link>
         </li>
         <li>
-          <Link href="">
+          <Link href="#services">
             <a>Services</a>
           </Link>
         </li>
         <li>
-          <Link href="">
+          <Link href="#work">
             <a>Work</a>
           </Link>
         </li>
         <li>
-          <Link href="">
+          <Link href="#contact">
             <a>Contact</a>
           </Link>
         </li>
