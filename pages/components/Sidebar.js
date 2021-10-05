@@ -17,8 +17,8 @@ const Sidebar = ({ toggle }) => {
           </Link>
         </li>
         <li>
-          <Link href="#services">
-            <a>Services</a>
+          <Link href="#skills">
+            <a>Skills</a>
           </Link>
         </li>
         <li>

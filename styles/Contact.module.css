@@ -54,3 +54,9 @@
   cursor: pointer;
   max-width: 150px;
 }
+
+@media (max-width: 425px) {
+  .contactForm {
+    width: 90%;
+  }
+}

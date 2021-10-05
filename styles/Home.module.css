@@ -11,3 +11,9 @@
   cursor: pointer;
   z-index: 1000;
 }
+
+@media (max-width: 425px) {
+  .toggle {
+    right: 20px;
+  }
+}

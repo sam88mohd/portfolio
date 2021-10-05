@@ -5,7 +5,7 @@ import { useRef } from "react";
 import Banner from "./components/Banner";
 import About from "./components/About";
 import ToggleBtn from "./components/ToggleBtn";
-import Services from "./components/Services";
+import Skills from "./components/Skills";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -27,7 +27,7 @@ export default function Home() {
         <ToggleBtn toggle={toggle} setToggle={setToggle} hideRef={hideRef} />
         <Banner />
         <About />
-        <Services />
+        <Skills />
         <Works />
         <Contact />
         <Sidebar toggle={toggle} />

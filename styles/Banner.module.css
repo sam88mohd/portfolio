@@ -129,3 +129,43 @@
   opacity: 1;
   color: #333;
 }
+
+@media (max-width: 1024px) {
+  .logoText {
+    top: 20px;
+  }
+
+  .contextBx h4,
+  .contextBx h4 span {
+    font-size: 1.2em;
+  }
+
+  .contextBx h2 {
+    font-size: 2em;
+  }
+
+  .sci {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .imgSidebar {
+    display: none;
+  }
+
+  .contextBx {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .logoText {
+    left: 40px;
+  }
+
+  .sci {
+    left: 0;
+  }
+}
+
+

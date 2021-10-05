@@ -17,6 +17,29 @@
   color: #fff;
 }
 
+.logoContainer {
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  gap: 20px;
+}
+
 .imgBx {
   margin-left: 40px;
+}
+
+@media (max-width: 425px) {
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .textBx {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .imgBx {
+    margin-left: 0;
+  }
 }

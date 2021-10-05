@@ -17,11 +17,10 @@ const Banner = () => {
             <span>Hello</span>, I&apos;m
           </h4>
           <h2>Samsudin Mohamad</h2>
-          <h4>I&apos;m a Front End Web Developer.</h4>
+          <h4>I&apos;m a Junior Front End Web Developer.</h4>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique,
-            culpa? Tenetur nobis voluptate, animi fugiat velit quia eveniet iste
-            maiores consequuntur commodi assumenda tempore iusto itaque.
+            Passionate about web development and self taught front end web
+            developer.
           </p>
           <Link href="#about">
             <a className={styles.btn}>About Me</a>
@@ -29,23 +28,16 @@ const Banner = () => {
         </div>
         <ul className={styles.sci}>
           <li>
-            <Link href="#">
-              <a>
-                <FaFacebookF fontSize="1.8em" />
+            <Link href="https://github.com/sam88mohd">
+              <a target="_blank">
+                <FaGithub fontSize="1.8em" color={"black"} />
               </a>
             </Link>
           </li>
           <li>
-            <Link href="#">
-              <a>
-                <FaGithub fontSize="1.8em" />
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              <a>
-                <FaLinkedinIn fontSize="1.8em" />
+            <Link href="https://www.linkedin.com/in/samsudin-mohamad-b7a88b1a1/">
+              <a target="_blank">
+                <FaLinkedinIn fontSize="1.8em" color={"black"} />
               </a>
             </Link>
           </li>

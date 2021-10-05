@@ -1,0 +1,29 @@
+.skillsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.skillsBx {
+  margin-bottom: 20px;
+}
+
+.skillBx {
+  padding: 0 100px;
+}
+
+.skillBx:last-child {
+  padding-bottom: 50px;
+}
+
+.skillHeader {
+  display: flex;
+  justify-content: space-between;
+}
