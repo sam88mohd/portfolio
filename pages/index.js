@@ -9,6 +9,7 @@ import Skills from "./components/Skills";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Qualifications from "./components/Qualifications";
 
 export default function Home() {
   const hideRef = useRef(null);
@@ -28,6 +29,7 @@ export default function Home() {
         <Banner />
         <About />
         <Skills />
+        <Qualifications />
         <Works />
         <Contact />
         <Sidebar toggle={toggle} />
