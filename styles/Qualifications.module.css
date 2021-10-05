@@ -6,6 +6,7 @@
   width: 80%;
   margin: auto;
   padding: 10px;
+  color: #fff;
 }
 
 .subtitleBx {
@@ -16,7 +17,6 @@
 .subtitleTab {
   cursor: pointer;
   padding: 10px;
-  color: #fff;
   width: 150px;
   text-align: center;
 }
@@ -27,9 +27,8 @@
   gap: 0.8em;
   column-gap: 50px;
   padding: 70px;
-  background: #fff;
   border-radius: 2px;
-  color: #111;
+  color: #fff;
 }
 
 .tabHead h3,
@@ -48,10 +47,13 @@
 
 .active {
   font-weight: 600;
-  background: #fff;
-  color: #00bcd4;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  position: relative;
+  letter-spacing: 1px;
+  border-top: thin solid #fff;
+  border-left: thin solid #fff;
+  border-right: thin solid #fff;
+  background: #001;
+  border-radius: 3px;
 }
 
 .calendar {
@@ -73,7 +75,7 @@
   display: inline-block;
   width: 13px;
   height: 13px;
-  background-color: #000;
+  background-color: #fff;
   border-radius: 50%;
 }
 
@@ -81,6 +83,6 @@
   display: block;
   width: 1px;
   height: 100%;
-  background-color: #000;
+  background-color: #fff;
   transform: translate(6px, -7px);
 }
