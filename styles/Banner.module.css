@@ -76,9 +76,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transition: 0.5s; */
+  transition: 0.5s;
   padding: 40px;
   z-index: 100;
+  right: -100%;
+}
+.active {
+  right: 0;
 }
 
 .sidebar ul {

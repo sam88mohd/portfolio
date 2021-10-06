@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "../../styles/Skills.module.css";
-import { BsCode } from "react-icons/bs";
+import { BsCodeSlash } from "react-icons/bs";
 import { MdExpandMore } from "react-icons/md";
+import { Md3DRotation } from "react-icons/md";
 import { BiHide } from "react-icons/bi";
 import ProgressBar from "@ramonak/react-progress-bar";
 import { useDetectOutsideClick } from "../../functions/useDetectOutsideClick";
@@ -22,8 +23,12 @@ const Skill = ({ title, skills, elRef }) => {
     <div className={styles.skillsBx} ref={elRef}>
       <div className={styles.skillsHeader} onClick={() => setToggle(!toggle)}>
         <div className={styles.headerTitle}>
-          <BsCode fontSize={50} />
-          <h2>{title}</h2>
+          {title === "Front End Development" ? (
+            <BsCodeSlash fontSize={25} />
+          ) : (
+            <Md3DRotation fontSize={25} />
+          )}
+          <h3>{title}</h3>
         </div>
         <div className={styles.logoMore}>
           {toggle ? <BiHide fontSize={25} /> : <MdExpandMore fontSize={25} />}
@@ -34,7 +39,7 @@ const Skill = ({ title, skills, elRef }) => {
           skills.map((skill, i) => (
             <motion.div key={i} className={styles.skillBx} variants={item}>
               <div className={styles.skillHeader}>
-                <h3>{skill.name}</h3>
+                <h4>{skill.name}</h4>
                 <p>{skill.percent}%</p>
               </div>
               <ProgressBar
