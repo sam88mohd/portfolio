@@ -31,7 +31,7 @@ const Skill = ({ title, skills, elRef }) => {
           <h3>{title}</h3>
         </div>
         <div className={styles.logoMore}>
-          {toggle ? <BiHide fontSize={25} /> : <MdExpandMore fontSize={25} />}
+          {toggle ? <BiHide fontSize={20} /> : <MdExpandMore fontSize={20} />}
         </div>
       </div>
       <motion.div initial="hidden" animate="visible" variants={list}>

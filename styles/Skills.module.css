@@ -1,3 +1,8 @@
+.content {
+  width: 90%;
+  margin: auto;
+}
+
 .skillsHeader {
   display: flex;
   justify-content: space-between;
@@ -16,7 +21,7 @@
 }
 
 .skillBx {
-  padding: 0 100px;
+  padding: 0 50px;
 }
 
 .skillBx:last-child {
