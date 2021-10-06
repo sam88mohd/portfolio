@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import styles from "../../styles/Banner.module.css";
+import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
@@ -22,9 +23,15 @@ const Banner = () => {
             Passionate about web development and self taught front end web
             developer.
           </p>
-          <Link href="#about">
-            <a className={styles.btn}>About Me</a>
-          </Link>
+          <motion.div
+            className={styles.btn}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <Link href="#about">
+              <a>About Me</a>
+            </Link>
+          </motion.div>
         </div>
         <ul className={styles.sci}>
           <li>
