@@ -51,7 +51,7 @@ const About = () => {
           </div>
         </div>
         <div className={styles.imgBx}>
-          <Image src={"/foto.jpg"} width={500} height={400} alt="bg1" />
+          <Image src={"/foto.jpg"} width={500} height={500} alt="bg1" />
         </div>
       </div>
     </section>

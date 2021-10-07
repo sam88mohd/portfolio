@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+  gap: 20px;
 }
 
 .textBx {
@@ -29,7 +30,7 @@
   overflow: hidden;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .content {
     display: flex;
     flex-direction: column-reverse;
