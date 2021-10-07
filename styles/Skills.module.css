@@ -21,7 +21,8 @@
 }
 
 .skillBx {
-  padding: 0 50px;
+  width: 90%;
+  margin: auto;
 }
 
 .skillBx:last-child {
