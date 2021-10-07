@@ -5,13 +5,8 @@ const Contact = () => {
   return (
     <section id="contact" className={styles.contact}>
       <div className="title white">
-        <h2>Contact Us</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi nihil
-          iste nemo eum iure, nulla similique? Quo saepe aspernatur, quibusdam
-          quas possimus sit recusandae voluptatibus perferendis rerum, adipisci
-          itaque incidunt!
-        </p>
+        <h2>Contact Me</h2>
+        <p>Get in Touch</p>
       </div>
       <div className={styles.contactForm}>
         <div className={styles.row}>
