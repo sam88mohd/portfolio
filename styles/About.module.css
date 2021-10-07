@@ -29,7 +29,7 @@
   overflow: hidden;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 700px) {
   .content {
     display: flex;
     flex-direction: column-reverse;
@@ -41,6 +41,6 @@
   }
 
   .imgBx {
-    margin-left: 0;
+    margin: auto;
   }
 }
