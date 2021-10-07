@@ -61,16 +61,6 @@
   font-style: italic;
 }
 
-.tabData,
-.dataLeft {
-  text-align: justify;
-}
-
-.tabData {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .rounder {
   display: inline-block;
   width: 13px;
