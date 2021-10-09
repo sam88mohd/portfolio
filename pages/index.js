@@ -6,10 +6,10 @@ import Banner from "./components/Banner";
 import About from "./components/About";
 import ToggleBtn from "./components/ToggleBtn";
 import Skills from "./components/Skills";
-import Works from "./components/Works";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Qualifications from "./components/Qualifications";
+import Projects from "./components/Projects";
 
 export default function Home() {
   const hideRef = useRef(null);
@@ -30,7 +30,7 @@ export default function Home() {
         <About />
         <Skills />
         <Qualifications />
-        <Works />
+        <Projects />
         <Contact />
         <Sidebar toggle={toggle} />
       </main>

@@ -1,0 +1,53 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  display: block;
+  background: white;
+  width: 800px;
+  max-width: 100%;
+  height: 600px;
+  max-height: 100%;
+  border-radius: 5px;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.header button {
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-weight: 800;
+  transition: 0.3s;
+}
+
+.body {
+  padding: 1em;
+}
+
+@media (max-width: 600px) {
+  .styledModal {
+    margin: auto;
+    width: 90%;
+  }
+}

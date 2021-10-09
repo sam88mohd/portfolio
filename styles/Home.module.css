@@ -9,11 +9,13 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 10;
 }
 
 @media (max-width: 425px) {
   .toggle {
-    right: 10%;
+    right: 5%;
+    width: 60px;
+    height: 60px;
   }
 }

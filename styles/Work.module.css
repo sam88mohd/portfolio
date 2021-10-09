@@ -30,6 +30,7 @@
   background: #000;
   opacity: 0;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .workBox:hover .textBx {

@@ -28,8 +28,8 @@ const Sidebar = ({ toggle }) => {
           </Link>
         </motion.li>
         <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <Link href="#work">
-            <a>Work</a>
+          <Link href="#projects">
+            <a>Projects</a>
           </Link>
         </motion.li>
         <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
