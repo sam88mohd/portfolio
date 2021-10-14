@@ -11,7 +11,7 @@
 .modal {
   display: block;
   background: white;
-  width: 800px;
+  width: 600px;
   max-width: 100%;
   height: 600px;
   max-height: 100%;
@@ -42,7 +42,7 @@
 }
 
 @media (max-width: 600px) {
-  .styledModal {
+  .modal {
     margin: auto;
     width: 90%;
   }

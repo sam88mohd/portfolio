@@ -61,7 +61,7 @@ const Projects = () => {
               </div>
               <div className={styles.paraBox}>
                 <p>
-                  <CgEditBlackPoint fontSize={27} /> {project.description}
+                  <CgEditBlackPoint fontSize={28} /> {project.description}
                 </p>
               </div>
             </Modal>
