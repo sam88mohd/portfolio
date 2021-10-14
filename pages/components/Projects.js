@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import styles from "../../styles/Work.module.css";
+import styles from "../../styles/Project.module.css";
 import Image from "next/image";
 import Modal from "./Modal";
 import { projectList } from "../../functions/constant";
-import { CgEditBlackPoint } from "react-icons/cg";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -16,16 +15,16 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className={styles.work}>
+    <section id="projects" className={styles.project}>
       <div className="title">
-        <h2>Recent Work</h2>
+        <h2>Recent Project</h2>
         <p>My previous projects</p>
       </div>
       <div className={styles.content}>
         {projectList.map((project, index) => (
           <div
             key={index}
-            className={styles.workBox}
+            className={styles.projectBox}
             onClick={() => handleClick(project.id)}
           >
             <div className={styles.imgBx}>
@@ -59,10 +58,10 @@ const Projects = () => {
                   {project.title}
                 </motion.h1>
               </div>
-              <div className={styles.paraBox}>
-                <p>
-                  <CgEditBlackPoint fontSize={28} /> {project.description}
-                </p>
+              <div className={styles.modalTextBx}>
+                <ul>
+                  <li>{project.description}</li>
+                </ul>
               </div>
             </Modal>
           ))}

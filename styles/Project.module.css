@@ -5,7 +5,7 @@
   flex-wrap: wrap;
 }
 
-.workBox {
+.projectBox {
   position: relative;
   width: 265px;
   height: 180px;
@@ -33,7 +33,7 @@
   cursor: pointer;
 }
 
-.workBox:hover .textBx {
+.projectBox:hover .textBx {
   opacity: 1;
 }
 
@@ -44,7 +44,6 @@
   font-size: 1em;
 }
 
-.paraBox p {
-  display: flex;
-  gap: 10px;
+.modalTextBx ul li {
+  list-style: square;
 }
