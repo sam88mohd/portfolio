@@ -3,6 +3,8 @@ import styles from "../../styles/Work.module.css";
 import Image from "next/image";
 import Modal from "./Modal";
 import { projectList } from "../../functions/constant";
+import { CgEditBlackPoint } from "react-icons/cg";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const [showModal, setShowModal] = useState(false);
@@ -49,10 +51,18 @@ const Projects = () => {
               show={showModal}
             >
               <div>
-                <h1>{project.title}</h1>
+                <motion.h1
+                  initial={{ x: -1000 }}
+                  animate={{ x: 0 }}
+                  transition={{ duration: "1", type: "tween" }}
+                >
+                  {project.title}
+                </motion.h1>
               </div>
-              <div>
-                <p>{project.description}</p>
+              <div className={styles.paraBox}>
+                <p>
+                  <CgEditBlackPoint fontSize={27} /> {project.description}
+                </p>
               </div>
             </Modal>
           ))}

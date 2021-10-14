@@ -43,3 +43,8 @@
   letter-spacing: 1px;
   font-size: 1em;
 }
+
+.paraBox p {
+  display: flex;
+  gap: 10px;
+}
