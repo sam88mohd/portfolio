@@ -19,9 +19,8 @@ const Modal = ({ show, onClose, children }) => {
   const modalContent = show ? (
     <div className={styles.overlay}>
       <div className={styles.modal}>
-        <div className={styles.header}>
+        <div className={styles.header} onClick={handleCloseClick}>
           <motion.button
-            onClick={handleCloseClick}
             animate={{
               scale: [1, 2, 2, 1, 1],
               rotate: [0, 0, 270, 270, 0],

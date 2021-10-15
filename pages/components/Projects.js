@@ -52,7 +52,7 @@ const Projects = () => {
               <div>
                 <motion.h1
                   initial={{ x: -1000 }}
-                  animate={{ x: 0 }}
+                  animate={{ x: 25 }}
                   transition={{ duration: "1", type: "tween" }}
                 >
                   {project.title}
