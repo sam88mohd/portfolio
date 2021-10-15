@@ -25,6 +25,7 @@ const Contact = () => {
       const templateParams = {
         firstName,
         lastName,
+        phoneNumber,
         email,
         message,
       };
