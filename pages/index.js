@@ -2,14 +2,14 @@ import Head from "next/head";
 import Sidebar from "./components/Sidebar";
 import { useDetectOutsideClick } from "../functions/useDetectOutsideClick";
 import { useRef } from "react";
-import Banner from "./components/Banner";
-import About from "./components/About";
+import Banner from "./sections/Banner";
+import About from "./sections/About";
 import ToggleBtn from "./components/ToggleBtn";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
+import Skills from "./sections/Skills";
+import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
-import Qualifications from "./components/Qualifications";
-import Projects from "./components/Projects";
+import Qualifications from "./sections/Qualifications";
+import Projects from "./sections/Projects";
 
 export default function Home() {
   const hideRef = useRef(null);

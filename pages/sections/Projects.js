@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../../styles/Project.module.css";
 import Image from "next/image";
-import Modal from "./Modal";
+import Modal from "../components/Modal";
 import { projectList } from "../../functions/constant";
 import { motion } from "framer-motion";
 
