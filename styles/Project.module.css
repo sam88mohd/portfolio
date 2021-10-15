@@ -47,3 +47,9 @@
 .modalTextBx ul li {
   list-style: square;
 }
+
+.projectTitleBx {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+}

@@ -49,7 +49,7 @@ const Projects = () => {
               onClose={() => setShowModal(false)}
               show={showModal}
             >
-              <div>
+              <div className={styles.projectTitleBx}>
                 <motion.h1
                   initial={{ x: -1000 }}
                   animate={{ x: 25 }}

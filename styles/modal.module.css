@@ -27,13 +27,21 @@
 
 .header {
   position: absolute;
-  top: 20px;
-  right: 15px;
+  top: 10px;
+  right: 10px;
 }
 
 .header button {
   border: none;
   cursor: pointer;
+  padding: 10px 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.header button:hover {
+  background: #000;
+  color: #fff;
 }
 
 .body {
