@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import { designList, feList } from "../../functions/constant";
-import styles from "../../styles/Skills.module.css";
+import { designList, feList } from "../../../functions/constant";
+import styles from "../../../styles/Skills.module.css";
 import Skill from "./Skill";
 
 const Skills = () => {

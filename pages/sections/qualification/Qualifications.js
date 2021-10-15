@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../../styles/Qualifications.module.css";
+import styles from "../../../styles/Qualifications.module.css";
 import { FaUserGraduate, FaBriefcase } from "react-icons/fa";
 import Education from "./Education";
 import WorkExperience from "./WorkExperience";

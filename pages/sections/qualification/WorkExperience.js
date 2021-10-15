@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/Qualifications.module.css";
+import styles from "../../../styles/Qualifications.module.css";
 import { FaRegCalendarAlt } from "react-icons/fa";
 
 const WorkExperience = () => {

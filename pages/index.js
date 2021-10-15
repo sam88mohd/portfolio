@@ -5,10 +5,10 @@ import { useRef } from "react";
 import Banner from "./sections/Banner";
 import About from "./sections/About";
 import ToggleBtn from "./components/ToggleBtn";
-import Skills from "./sections/Skills";
+import Skills from "./sections/skills/Skills";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
-import Qualifications from "./sections/Qualifications";
+import Qualifications from "./sections/qualification/Qualifications";
 import Projects from "./sections/Projects";
 
 export default function Home() {

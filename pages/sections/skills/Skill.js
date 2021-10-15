@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "../../styles/Skills.module.css";
+import styles from "../../../styles/Skills.module.css";
 import { BsCodeSlash } from "react-icons/bs";
 import { MdExpandMore } from "react-icons/md";
 import { Md3DRotation } from "react-icons/md";
 import { BiHide } from "react-icons/bi";
 import ProgressBar from "@ramonak/react-progress-bar";
-import { useDetectOutsideClick } from "../../functions/useDetectOutsideClick";
+import { useDetectOutsideClick } from "../../../functions/useDetectOutsideClick";
 import { motion } from "framer-motion";
 
 const Skill = ({ title, skills, elRef }) => {
