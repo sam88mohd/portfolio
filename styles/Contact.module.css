@@ -6,10 +6,40 @@
   flex-direction: column;
 }
 
+.infoBx {
+  color: #fff;
+  width: 700px;
+}
+
+.infoBx ul {
+  line-height: 40px;
+}
+
+.infoBx li {
+  letter-spacing: 2px;
+}
+
+.infoBx span {
+  text-transform: uppercase;
+  font-style: italic;
+}
+
 .contactForm {
   position: relative;
   width: 700px;
   margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+  margin: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: #00bcd4;
 }
 
 .row {
