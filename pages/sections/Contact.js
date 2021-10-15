@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "../../styles/Contact.module.css";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [firstName, setFirstName] = useState("");
@@ -17,6 +18,19 @@ const Contact = () => {
       phoneNumber &&
       message
     ) {
+      // emailjs
+      const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+      const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+      const userId = process.env.NEXT_PUBLIC_USER_ID;
+      const templateParams = {
+        firstName,
+        lastName,
+        email,
+        message,
+      };
+
+      emailjs.send(serviceId, templateId, templateParams, userId);
+
       setFirstName("");
       setLastName("");
       setEmail("");
@@ -25,7 +39,7 @@ const Contact = () => {
       setEmailSent(true);
       setTimeout(() => {
         setEmailSent(false);
-      }, 3000);
+      }, 10000);
     } else {
       alert("Please fill in all fields.");
     }
@@ -54,6 +68,9 @@ const Contact = () => {
         </ul>
       </div>
       <div className={styles.contactForm}>
+        <span className={emailSent ? styles.visible : styles.hidden}>
+          Thank you for your message, we will be in touch in no time!
+        </span>
         <div className={styles.row}>
           <div className={styles.col50}>
             <input
@@ -104,9 +121,6 @@ const Contact = () => {
             <input type="submit" value="Send" onClick={() => submit()} />
           </div>
         </div>
-        <span className={emailSent ? styles.visible : styles.hidden}>
-          Thank you for your message, we will be in touch in no time!
-        </span>
       </div>
     </section>
   );
