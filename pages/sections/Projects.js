@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section id="projects" className={styles.project}>
       <div className="title">
-        <h2>Recent Project</h2>
+        <h2>Previous Project</h2>
         <p>My previous projects</p>
       </div>
       <div className={styles.content}>
