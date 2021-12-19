@@ -1,13 +1,11 @@
 .content {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1;
 }
 
 .projectBox {
   position: relative;
-  width: 265px;
   height: 180px;
   margin: 10px;
   transition: 0.5;
@@ -37,11 +35,13 @@
   opacity: 1;
 }
 
-.textBx h3 {
+.textBx a {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .modalTextBx ul li {
@@ -52,4 +52,16 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1em;
+}
+
+@media (max-width: 425px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
