@@ -39,9 +39,9 @@ export const projectList = [
   },
   {
     id: 3,
-    title: "Base Apparel Coming Soon",
+    title: "Simple e-commerce",
     imgPath: "/work/img3.jpg",
-    url: "https://base-coming-up.netlify.app/",
+    url: "https://flamboyant-galileo-60460a.netlify.app/",
   },
   {
     id: 4,
