@@ -63,7 +63,7 @@ export const projectList = [
   {
     id: 6,
     title: "Travel Blog",
-    imgUrl: "/work/img6.jpg",
+    imgUrl: "https://live.staticflickr.com/65535/51919484273_03436bfa56_b.jpg",
     url: "https://my-blog-self-eight.vercel.app/",
     githubUrl: "https://github.com/sam88mohd/my-blog",
   },
