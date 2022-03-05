@@ -37,7 +37,11 @@ const Projects = () => {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 >
-                  <a href={project.githubUrl} rel="noreferrer" target="_blank">
+                  <a
+                    href={project.githubUrl}
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
                     Project Github
                   </a>
                 </motion.button>
