@@ -1,57 +1,49 @@
 .content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1;
+  gap: 2em;
 }
 
-.projectBox {
-  position: relative;
-  height: 180px;
-  margin: 10px;
-  transition: 0.5;
-  text-align: center;
+.card {
+  border: 1px solid #f1f1f1;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-.imgBx,
-.textBx {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.textContent {
+  padding: 10px;
+}
+
+.cardTitle {
+  margin: 0;
+}
+
+.link {
+  background-color: black;
+  color: #f1f1f1;
+}
+
+.btnContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
 }
 
-.textBx {
-  background: #000;
-  opacity: 0;
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-.projectBox:hover .textBx {
-  opacity: 1;
-}
-
-.textBx a {
+.btn {
+  background: #00bcd4;
   color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 1em;
-  font-weight: bold;
+  padding: 10px;
+  display: inline-block;
   text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border: none;
 }
 
-.modalTextBx ul li {
-  list-style: square;
-}
-
-.projectTitleBx {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 1em;
+.btn a {
+  text-decoration: none;
+  color: #fff;
 }
 
 @media (max-width: 425px) {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../../styles/Contact.module.css";
 import emailjs from "emailjs-com";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [firstName, setFirstName] = useState("");
@@ -118,9 +119,13 @@ const Contact = () => {
           </div>
         </div>
         <div className={styles.row}>
-          <div className={styles.col100}>
+          <motion.div
+            className={styles.col100}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <input type="submit" value="Send" onClick={() => submit()} />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -24,7 +24,7 @@ const Banner = () => {
             developer.
           </p>
           <motion.div
-            className={styles.btn}
+            className="btn"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
