@@ -28,18 +28,14 @@ const Projects = () => {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 >
-                  <a href={project.url} target="_blank" rel="noreferrer">
-                    Page
-                  </a>
+                  <a href={project.url}>Page</a>
                 </motion.button>
                 <motion.button
                   className={styles.btn}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 >
-                  <a href={project.githubUrl} target="_blank" rel="noreferrer">
-                    Project Github
-                  </a>
+                  <a href={project.githubUrl}>Project Github</a>
                 </motion.button>
               </div>
             </div>
