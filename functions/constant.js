@@ -88,4 +88,11 @@ export const projectList = [
     url: "https://photo-upload-firebase-gc4epg4yn-sam88mohd.vercel.app/",
     githubUrl: "https://github.com/sam88mohd/photo-upload-firebase",
   },
+  {
+    id: 10,
+    title: "Rock Paper Scissor",
+    imgUrl: "https://live.staticflickr.com/65535/51918490692_539ba267b6_b.jpg",
+    url: "https://friendly-lovelace-04cd5f.netlify.app/",
+    githubUrl: "https://github.com/sam88mohd/rock-paper-scissor",
+  },
 ];
