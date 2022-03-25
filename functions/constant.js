@@ -34,10 +34,10 @@ export const projectList = [
   },
   {
     id: 2,
-    title: "Huddle Landing Page",
-    imgUrl: "https://live.staticflickr.com/65535/51919713914_282e5b4a17_h.jpg",
-    url: "https://romantic-goldberg-d4c9ed.netlify.app/",
-    githubUrl: "https://github.com/sam88mohd/huddle-landing-page",
+    title: "Expense Tracking App",
+    imgUrl: "https://live.staticflickr.com/65535/51960381910_fc0e2f825a_h.jpg",
+    url: "https://legendary-begonia-6a7527.netlify.app//",
+    githubUrl: "https://github.com/sam88mohd/expense-tracker-react",
   },
   {
     id: 3,
